@@ -109,6 +109,7 @@ function ControlTray({
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.srcObject = activeVideoStream;
+      videoRef.current.style.display = 'none';
     }
 
     let timeoutId = -1;
